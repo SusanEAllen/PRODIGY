@@ -1,0 +1,37 @@
+# conda environment description file for the analysis-susan environment
+#
+# Create a conda environment in which to run Jupyter Notebooks in this directory with:
+#
+#   $ conda env create -f py311_prodigy.yaml
+#   $ conda activate py311_prodigy
+#
+# To add new packages to the environment,
+# add them to the dependencies list below,
+# then update the activated environment with:
+#
+#   (py311_prodigy)$ conda env update -f py311_prodigy.yaml
+
+name: py311_prodigy
+
+channels:
+  - conda-forge
+
+dependencies:
+  - arrow
+  - cmocean
+  - ipython
+  - jupyterlab
+  - matplotlib
+  - netCDF4
+  - numpy
+  - pandas
+  - pip
+  - python=3
+  - python-dateutil
+  - pyyaml
+  - scipy
+  - scikit-learn
+  - xarray
+
+  - pip:
+    - sklearn_som
